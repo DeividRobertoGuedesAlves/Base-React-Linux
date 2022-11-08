@@ -1,0 +1,31 @@
+:root
+{
+	--menuItem-border-radius:  10px;
+}
+
+.menuItem,
+.menuItemActive
+{
+	height: 40px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding-left: 10px;
+	border-radius: var(--menuItem-border-radius) 0px 0px var(--menuItem-border-radius);
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.menuItem:hover
+{
+	background: gray;
+	transform: scale(1.05);
+	border-radius: var(--menuItem-border-radius);
+}
+
+.menuItemActive
+{
+	background: skyblue;
+	cursor: unset;
+}

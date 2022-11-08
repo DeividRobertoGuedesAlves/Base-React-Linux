@@ -1,0 +1,51 @@
+.sideBar
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #3e3e42;
+	width: 45px;
+	height: 100%;
+	padding: 1rem 0px 0px 0.5rem;
+	box-shadow: 10px 0px 0px skyblue;
+	transition: 1s;
+	overflow-x: hidden;
+}
+
+.sideBarHeader
+{
+	position: fixed;
+	color: lightskyblue;
+	text-align: center;
+	margin-bottom: 20px;
+	top: -200px;
+	transition: 1s;
+}
+
+.sideBarBody
+{
+	transition: 1s;
+}
+
+.menu
+{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.sideBar:hover
+{
+	width: 300px;
+}
+
+.sideBar:hover .sideBarHeader
+{
+	transform: translateY(210px);
+}
+
+.sideBar:hover .sideBarBody
+{
+	margin-top: 40px;
+}
